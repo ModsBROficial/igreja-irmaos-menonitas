@@ -94,7 +94,7 @@ export default async function RecoveryPassword(req, res, next) {
                 <tbody>
                   <tr>
                     <td height="44" align="center" bgcolor="#FF6B05" style="border-radius:4px;padding-left:48px;padding-right:48px;padding-top:0;padding-bottom:0">
-                      <a href='https://igrejairmaosmenonitas.com/new-password?token=${newPass}&email=${user?.email}' style="font-size:12px;font-family:'Segoe UI',Roboto,-apple-system,BlinkMacSystemFont,Arial,sans-serif;font-weight:bold;color:#FFFFFF;letter-spacing:1.5px;line-height:22px;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://u18191219.ct.sendgrid.net/ls/click?upn%3DCMMpowmJJVQHKgPG1Yjj3w-2F1s3hT1e976mLjayHL22rh8dPBvJUOsaqfVssjM9Rr6zDV_-2B7zOgAJFAmnMnR1D9ftebllkY7P8VZ7D3vpEA95MMjAfTYiZptyo48pgirt-2BgPlH-2FqLgzkQqqk0BELXrYPZWv8ozp440h8qokyFQXiESrXZZCR5ocY0Fnsdjq-2F9CAPVhwvPOvAPwGAJMRySNEtLsEuJTRXrCqkV4RJwxrGzLfeQUQObj2l4C0NoO6K59HU3t0Nqx-2FM4CvB9tH-2FtPIGRncShQLQOWUA0l0kai0ev-2BqeU-3D&amp;source=gmail&amp;ust=1702064916680000&amp;usg=AOvVaw0Z_agAXGRuXaj4wMffJ_Yv">
+                      <a href='https://www.igrejairmaosmenonitas.com/new-password?token=${newPass}&email=${user?.email}' style="font-size:12px;font-family:'Segoe UI',Roboto,-apple-system,BlinkMacSystemFont,Arial,sans-serif;font-weight:bold;color:#FFFFFF;letter-spacing:1.5px;line-height:22px;text-decoration:none" target="_blank" data-saferedirecturl="https://www.igrejairmaosmenonitas.com">
                         REDEFINIR SENHA
                       </a>
                     </td>

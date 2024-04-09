@@ -46,7 +46,7 @@ export default function Home() {
     <section className="bg-secondary h-full w-full overflow-y-hidden flex justify-center items-center">
       <Head>
         <meta property="og:title" content={"Sistema Financeiro - Igreja Irmãos Menonitas - Login"} />
-        <meta property="og:url" content={`https://igrejairmaosmenonitas.vercel.app`} />
+        <meta property="og:url" content={`https://www.igrejairmaosmenonitas.com`} />
         <meta property="og:image" content={`${<Logo cursor="cursor-default" />}`} />
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="300" />

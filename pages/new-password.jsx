@@ -48,7 +48,7 @@ export default function NewPassword() {
     <section onKeyDown={(ev) => checkKey(ev, createNewPassword)} className="bg-secondary h-full w-full overflow-y-hidden flex justify-center items-center">
       <Head>
         <meta property="og:title" content={"Sistema Financeiro - Igreja Irmãos Menonitas - Criar Nova Senha"} />
-        <meta property="og:url" content={`https://igrejairmaosmenonitas.vercel.app`} />
+        <meta property="og:url" content={`https://www.igrejairmaosmenonitas.com`} />
         <meta property="og:image" content={`${<Logo cursor="cursor-default" />}`} />
         <meta property="og:image:width" content="400" />
         <meta property="og:image:height" content="300" />
