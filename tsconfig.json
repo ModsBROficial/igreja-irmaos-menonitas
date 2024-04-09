@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Header.jsx", "providers/ModalProvider.jsx", "components/Modal.jsx", "components/Menu.jsx", "components/Profile.jsx", "pages/dashboard/categories/index.jsx", "components/SelectContainer.jsx", "components/CategoryCard.tsx", "pages/dashboard/manage-accounts/index.jsx", "components/CardUser.jsx", "components/WarnMessage.jsx", "components/ViewDocument.jsx", "components/Add.jsx", "components/Calculator.jsx", "components/InfoAdd.jsx", "components/Date.jsx", "components/CardTransaction.jsx", "pages/dashboard/index.jsx", "components/CardLinkHome.jsx", "pages/index.jsx", "components/icons/ChevronUpCircleIcon.tsx", "components/icons/DizimoIcon.jsx", "components/InfoTransaction.jsx", "components/CarouselVertical.jsx", "pages/dashboard/reports/index.jsx", "pages/forgot-password.jsx", "pages/new-password.jsx"],
+  "exclude": ["node_modules"]
+}
