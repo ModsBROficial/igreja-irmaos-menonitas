@@ -7,11 +7,14 @@ import formatFirstWordToUpperCase from "@/lib/formatFirstWordToUpperCase";
 import useFlashMessage from "@/hooks/useFlashMessage";
 import Button from "./Button";
 import formatDate from "@/lib/formatDate";
+import { useState } from "react";
 
 const ViewDocument = ({ document }) => {
     const { setFlashMessage } = useFlashMessage()
+    const [isDownloading, setIsDownloading ] = useState(false)
     
     const download = async(doc) => {
+        setIsDownloading(true)
         let msgText = "Erro ao baixar o arquivo";
         let msgType = 'error'
         
@@ -30,6 +33,7 @@ const ViewDocument = ({ document }) => {
         } catch (error) {
             setFlashMessage(msgText, msgType)
         }
+        setIsDownloading(false)
     }
 
     return (
@@ -43,7 +47,7 @@ const ViewDocument = ({ document }) => {
                 <TitleH2 text="Descrição:" />
                 <TitleH3 className="mt-[3px]" text={formatFirstWordToUpperCase(document?.description)} />
             </div>
-            <Button text="Baixar documento" className="bg-primary mx-auto h-[30px] my-[10px]" onClick={() => download(document?.doc[0])} />
+            <Button text={isDownloading ? "Baixando..." : "Baixar documento"} className={`mx-auto h-[30px] my-[10px] hover:bg-primary_less ${isDownloading ? "bg-neutral-300 hover:bg-neutral-300 " : "bg-primary "}`} onClick={() => download(document?.doc[0])} />
             <div className="flex items-center overflow-hidden bg-mygray justify-center p-1">
                 {document?.doc[0]?.includes(".pdf") ? (
                     <div className="flex justify-center items-center w-[400px] h-full">
